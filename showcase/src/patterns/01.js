@@ -1,3 +1,4 @@
+// ! HOC
 import mojs from "mo-js";
 import React, { Component, useState } from "react";
 import styles from "./index.css";
