@@ -30,5 +30,5 @@ export const useClapState = (initialState = {}) => {
     ...otherProps
   })
 
-  return { clapState, updateClapState, togglerProps, counterProps }
+  return { clapState, updateClapState, togglerProps, counterProps, setClapState }
 }
