@@ -22,12 +22,13 @@ export const useClapState = (initialState = {}) => {
     'aria-pressed': clapState.isClicked
   }
 
-  const counterProps = {
+  const counterProps = ({ ...otherProps }) => ({
     count,
     'aria-valuemax': MAXIMUM_USER_CLAP,
     'aria-valuemin': 0,
     'aria-valuenow': count,
-  }
+    ...otherProps
+  })
 
   return { clapState, updateClapState, togglerProps, counterProps }
 }
